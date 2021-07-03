@@ -41,14 +41,14 @@ class App extends React.Component {
 
   handleDeposito = (event) => {
     this.setState((state) =>{
-      return {saldo: state.saldo + parseFloat(state.dep), oper:"deposito"
+      return {saldo: state.saldo + parseFloat(state.dep), oper:"resultado"}
     
-      if (this.state.dep > 0){
-        return{oper:"resultado"}}
+   /*   if (this.state.dep > 0){
+        return{oper:"resultado"}}*/
     
           
-    }
-  
+    
+   }
     )
   }
 
@@ -88,7 +88,7 @@ menu() {
     <div className="App">
       <h1>Bem vindo ao Banco!</h1>
       <button onClick={this.handleSaque}> Saque </button>
-      <button onClick={this.handleDeposito}> Depósito </button>
+      <button onClick={this.handleDep}> Depósito </button>
       <button onClick={this.handleConsulta}> Consulta </button>
 
     </div>
